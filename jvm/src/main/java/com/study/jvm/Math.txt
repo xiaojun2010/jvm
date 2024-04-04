@@ -1,0 +1,116 @@
+Classfile /Users/zhangxiaojun/work/study/github/jvm/jvm/target/classes/com/study/jvm/Math.class
+  Last modified 2024年4月3日; size 627 bytes
+  SHA-256 checksum 1389e872e0e89e59ce67e13ecbcfce809868ddbc717378801e75056db1a14944
+  Compiled from "Math.java"
+public class com.study.jvm.Math
+  minor version: 0
+  major version: 52
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // com/study/jvm/Math
+  super_class: #5                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #5.#29         // java/lang/Object."<init>":()V
+   #2 = Class              #30            // com/study/jvm/Math
+   #3 = Methodref          #2.#29         // com/study/jvm/Math."<init>":()V
+   #4 = Methodref          #2.#31         // com/study/jvm/Math.compute:()I
+   #5 = Class              #32            // java/lang/Object
+   #6 = Utf8               initData
+   #7 = Utf8               I
+   #8 = Utf8               ConstantValue
+   #9 = Integer            666
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               LocalVariableTable
+  #15 = Utf8               this
+  #16 = Utf8               Lcom/study/jvm/Math;
+  #17 = Utf8               compute
+  #18 = Utf8               ()I
+  #19 = Utf8               a
+  #20 = Utf8               b
+  #21 = Utf8               c
+  #22 = Utf8               main
+  #23 = Utf8               ([Ljava/lang/String;)V
+  #24 = Utf8               args
+  #25 = Utf8               [Ljava/lang/String;
+  #26 = Utf8               math
+  #27 = Utf8               SourceFile
+  #28 = Utf8               Math.java
+  #29 = NameAndType        #10:#11        // "<init>":()V
+  #30 = Utf8               com/study/jvm/Math
+  #31 = NameAndType        #17:#18        // compute:()I
+  #32 = Utf8               java/lang/Object
+{
+  public static final int initData;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 666
+
+  public com.study.jvm.Math();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/study/jvm/Math;
+
+  public int compute();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iconst_2
+         3: istore_2
+         4: iload_1
+         5: iload_2
+         6: iadd
+         7: bipush        10
+         9: imul
+        10: istore_3
+        11: iload_3
+        12: ireturn
+      LineNumberTable:
+        line 7: 0
+        line 8: 2
+        line 9: 4
+        line 10: 11
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lcom/study/jvm/Math;
+            2      11     1     a   I
+            4       9     2     b   I
+           11       2     3     c   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #2                  // class com/study/jvm/Math
+         3: dup
+         4: invokespecial #3                  // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #4                  // Method compute:()I
+        12: pop
+        13: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 8
+        line 17: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0  args   [Ljava/lang/String;
+            8       6     1  math   Lcom/study/jvm/Math;
+}
+SourceFile: "Math.java"
