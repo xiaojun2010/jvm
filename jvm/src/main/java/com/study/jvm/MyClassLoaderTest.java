@@ -87,6 +87,18 @@ public class MyClassLoaderTest {
             Method method = clazz.getDeclaredMethod("sout", null);
             method.invoke(obj, null);
             System.out.println(clazz.getClassLoader().getClass().getName());
+
+            System.out.println();
+
+            MyClassLoader classLoader1 = new MyClassLoader("/Users/zhangxiaojun/work/study/github/jvm/jvm/src/test/clazz1");
+            //D盘创建 test/com/tuling/jvm 几级目录，将User类的复制类User1.class丢入该目录
+            Class clazz1 = classLoader1.loadClass("com.tuling.jvm.User1");
+            Object obj1 = clazz1.newInstance();
+            Method method1 = clazz1.getDeclaredMethod("sout", null);
+            method1.invoke(obj1, null);
+            System.out.println(clazz1.getClassLoader().getClass().getName());
+
+
         }
 
     }

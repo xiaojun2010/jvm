@@ -1,1 +1,11 @@
+com/study/jvm/TestDynamicLoad.class
+com/study/jvm/B.class
+com/study/jvm/MyClassLoaderTest.class
+com/study/jvm/TestJDKClassLoader.class
+com/study/jvm/JOLSample.class
 com/tuling/jvm/User1.class
+com/study/jvm/HeapTest.class
+com/study/jvm/Math.class
+com/study/jvm/JOLSample$A.class
+com/study/jvm/A.class
+com/study/jvm/MyClassLoaderTest$MyClassLoader.class

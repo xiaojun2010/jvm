@@ -13,9 +13,24 @@ public class Math {
         return c;
     }
 
+    /**
+     * 运行此代码，cpu会飙高
+     * @param args
+     */
     public static void main(String[] args) {
         Math math = new Math();
+        while (true){
+            math.compute();
+        }
+    }
+
+    public static void main0(String[] args) {
+        Math math = new Math();
         math.compute();
+
+        Class<? extends Math> mathClass = math.getClass();
+
+
 
     }
 }
